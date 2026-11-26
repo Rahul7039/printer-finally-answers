@@ -9,6 +9,10 @@ import os
 
 LINE = "I've printed your boarding pass, your divorce papers and your 2 a.m. resignation letter. I know more about your life than your therapist — and unlike her, I never run out of toner."
 
+# Keep the single printed/written line within the competition's length limit.
+MAX_CHARS = 200
+assert 1 <= len(LINE) <= MAX_CHARS
+
 OUTPUT_PATH = "/output/entry.txt"
 
 
